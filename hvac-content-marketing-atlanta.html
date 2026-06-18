@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Content Marketing for HVAC Companies in Atlanta | Content Engine Local</title>
+  <meta name="description" content="Atlanta HVAC companies: stop losing service calls to competitors who show up first online. Content Engine Local handles your content so you can focus on the work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --coral:      #DA7756;
+      --dark:       #1C1917;
+      --navy:       #2D2A26;
+      --cream:      #F5F0E8;
+      --pale:       #FAF0EB;
+      --mid:        #6B6560;
+      --white:      #FDFCFA;
+      --font-head:  'Lora', Georgia, serif;
+      --font-body:  'Source Sans 3', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--white);
+      color: var(--dark);
+      font-family: var(--font-body);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    section { padding: 4rem 0; }
+    section:nth-child(even) { background: var(--cream); }
+
+    nav {
+      background: var(--dark);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      color: var(--white);
+      text-decoration: none;
+      letter-spacing: 0.01em;
+    }
+    .nav-cta {
+      background: var(--coral);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.875rem;
+      padding: 0.5rem 1.1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .hero {
+      background: var(--cream);
+      color: var(--dark);
+      padding: 5rem 0 4rem;
+    }
+    .hero-eyebrow {
+      font-family: var(--font-body);
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--coral);
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-family: var(--font-head);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--dark);
+      margin-bottom: 1.5rem;
+      max-width: 700px;
+    }
+    .hero h1 span { color: var(--coral); }
+    .hero-sub {
+      font-size: 1.125rem;
+      color: var(--navy);
+      max-width: 580px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--coral);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-primary:hover { opacity: 0.88; }
+    .hero-note {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--mid);
+    }
+
+    .problem h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+    .problem p { color: var(--navy); margin-bottom: 1rem; font-size: 1.05rem; }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    @media (max-width: 580px) { .pain-grid { grid-template-columns: 1fr; } }
+    .pain-card {
+      background: var(--white);
+      border-radius: 8px;
+      border: 1px solid #E8E2D8;
+      border-left: 3px solid var(--coral);
+      padding: 1.25rem 1.25rem 1.25rem 1rem;
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+    }
+    .pain-icon {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      background: var(--cream);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 0.1rem;
+    }
+    .pain-card p {
+      font-size: 0.95rem;
+      color: var(--navy);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .what h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .what .intro { color: var(--mid); margin-bottom: 2.5rem; font-size: 1.05rem; }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    @media (max-width: 680px) { .icon-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 420px) { .icon-grid { grid-template-columns: 1fr; } }
+    .icon-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 1.5rem 1.25rem;
+      text-align: center;
+      border: 1px solid #E8E2D8;
+    }
+    .icon-wrap {
+      width: 64px;
+      height: 64px;
+      background: var(--cream);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1rem;
+    }
+    .icon-card strong {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      color: var(--dark);
+      margin-bottom: 0.4rem;
+    }
+    .icon-card p {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.55;
+    }
+
+    .offers { background: var(--pale); }
+    .offers h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .offers .intro { color: var(--mid); margin-bottom: 2.5rem; font-size: 1.05rem; }
+
+    .offer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 640px) { .offer-grid { grid-template-columns: 1fr; } }
+
+    .offer-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 2rem 1.75rem;
+      border: 1px solid #E8E2D8;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+    .offer-card.featured {
+      border-color: var(--coral);
+      border-width: 2px;
+    }
+    .offer-badge {
+      position: absolute;
+      top: -0.7rem;
+      left: 1.5rem;
+      background: var(--coral);
+      color: var(--white);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.75rem;
+      border-radius: 20px;
+    }
+    .offer-price {
+      font-family: var(--font-head);
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 0.25rem;
+    }
+    .offer-price span {
+      font-size: 1rem;
+      font-weight: 400;
+      color: var(--mid);
+      font-family: var(--font-body);
+    }
+    .offer-name {
+      font-weight: 600;
+      color: var(--coral);
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.85rem;
+    }
+    .offer-list {
+      list-style: none;
+      display: grid;
+      gap: 0.6rem;
+      margin-bottom: 1.75rem;
+      flex: 1;
+    }
+    .offer-list li {
+      font-size: 0.95rem;
+      color: var(--navy);
+      padding-left: 1.25rem;
+      position: relative;
+    }
+    .offer-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--coral);
+      font-weight: 700;
+    }
+    .offer-desc {
+      font-size: 0.9rem;
+      color: var(--mid);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .btn-offer {
+      display: block;
+      text-align: center;
+      background: var(--dark);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .offer-card.featured .btn-offer { background: var(--coral); }
+    .btn-offer:hover { opacity: 0.88; }
+
+    .who h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .who-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 580px) { .who-grid { grid-template-columns: 1fr; } }
+    .who-card {
+      background: var(--white);
+      border-radius: 6px;
+      padding: 1.25rem 1.5rem;
+      font-size: 0.975rem;
+      color: var(--navy);
+      border: 1px solid #E8E2D8;
+      border-left: 3px solid var(--coral);
+    }
+    .who-card strong { display: block; color: var(--dark); font-weight: 600; margin-bottom: 0.3rem; }
+
+    .cta-band {
+      background: var(--coral);
+      padding: 4rem 0;
+      text-align: center;
+    }
+    .cta-band h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .cta-band p {
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 2rem;
+      font-size: 1.05rem;
+    }
+    .btn-white {
+      display: inline-block;
+      background: var(--white);
+      color: var(--coral);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.9rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .btn-white:hover { opacity: 0.9; }
+    .cta-note {
+      margin-top: 0.9rem;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.88);
+    }
+
+    footer {
+      background: var(--dark);
+      color: #B8B2AC;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--coral); text-decoration: none; }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #E0D8CC;
+      margin: 2.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="https://contentenginelocal.com" class="nav-logo">Content Engine Local</a>
+    <a href="https://calendly.com/tenishamercer/free-content-audit" class="nav-cta" target="_blank" rel="noopener">Book a Free Audit</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero-eyebrow">Content Marketing for HVAC Companies · Atlanta, GA</p>
+      <h1>Your customer's AC is down —<br><span>they just found your competitor first.</span></h1>
+      <p class="hero-sub">
+        You work faster. You charge fair prices. Content Engine Local makes sure Atlanta homeowners find you before they find anyone else.
+      </p>
+      <a href="https://calendly.com/tenishamercer/free-content-audit" class="btn-primary" target="_blank" rel="noopener">
+        Book Your Free 15-Min Content Audit
+      </a>
+      <p class="hero-note">No pitch. No pressure. Just a clear look at where you stand.</p>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem">
+    <div class="container">
+      <h2>Peak season hits. Your phone should be ringing off the hook. It's not.</h2>
+      <p>You run a solid HVAC operation in Atlanta. Your techs show up on time, your work is clean, and your customers trust you. But trust doesn't fill your schedule during the slow months or when a new competitor moves into your zip code.</p>
+      <p>Here's what's happening right now:</p>
+
+      <div class="pain-grid">
+
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="#DA7756" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p>Atlanta homeowners Google "AC repair near me" the moment it breaks down. They call whoever shows up first. Right now that's not you.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" stroke="#DA7756" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p>Your competitors post seasonal tips, maintenance reminders, and before/after photos every week. You don't have time for that between service calls.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="#DA7756" stroke-width="2"/>
+              <path d="M12 8v4" stroke="#DA7756" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 16h.01" stroke="#DA7756" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p>Summer AC calls and winter heating calls are your biggest revenue windows. When your content goes quiet between seasons, so does your pipeline.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" stroke="#DA7756" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <p>Five-star reviews sit on Google and nobody sees them. Without content pushing those reviews in front of new customers, they do nothing for your business.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section class="what">
+    <div class="container">
+      <h2>This is what Content Engine Local does for Atlanta HVAC companies.</h2>
+      <p class="intro">We handle the content. You handle the calls. Every month, your business stays visible to Atlanta homeowners searching for HVAC help — in every season.</p>
+
+      <div class="icon-grid">
+
+        <div class="icon-card">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 18L18 6L32 18" stroke="#DA7756" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 15V28C8 28.6 8.4 29 9 29H15V22H21V29H27C27.6 29 28 28.6 28 28V15" stroke="#DA7756" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <strong>Google Business Profile</strong>
+          <p>We keep it updated so Atlanta homeowners find you first when they search.</p>
+        </div>
+
+        <div class="icon-card">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6 C10 6 5 11 5 18 C5 25 10 30 18 30 C22 30 25 28 27 26 L31 30 L30 22 L22 23 C21 25 20 26 18 26 C13 26 9 22 9 18 C9 14 13 10 18 10 C21 10 23 11 25 13 L28 10 C26 8 22 6 18 6Z" stroke="#DA7756" stroke-width="2" fill="none"/>
+            </svg>
+          </div>
+          <strong>Facebook &amp; Nextdoor</strong>
+          <p>The platforms Atlanta homeowners use to ask neighbors for recommendations.</p>
+        </div>
+
+        <div class="icon-card">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 8 C13 8 10 11 10 15 C10 20 14 22 18 28 C22 22 26 20 26 15 C26 11 23 8 18 8Z" stroke="#DA7756" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+              <circle cx="18" cy="15" r="3" stroke="#DA7756" stroke-width="2"/>
+            </svg>
+          </div>
+          <strong>Seasonal Campaigns</strong>
+          <p>AC tune-up posts in spring. Heating prep in fall. Timed to when Atlanta homeowners are searching.</p>
+        </div>
+
+        <div class="icon-card">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="4" width="12" height="12" rx="2" stroke="#DA7756" stroke-width="2.5"/>
+              <rect x="20" y="4" width="12" height="12" rx="2" stroke="#DA7756" stroke-width="2.5"/>
+              <rect x="4" y="20" width="12" height="12" rx="2" stroke="#DA7756" stroke-width="2.5"/>
+              <rect x="20" y="20" width="12" height="12" rx="2" stroke="#DA7756" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <strong>Before &amp; After Posts</strong>
+          <p>We showcase your completed jobs and turn satisfied customers into new leads.</p>
+        </div>
+
+        <div class="icon-card">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18 6L22 14L31 15L24.5 21.5L26 31L18 27L10 31L11.5 21.5L5 15L14 14Z" stroke="#DA7756" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <strong>Review Amplification</strong>
+          <p>We push your five-star reviews in front of new customers so they work harder for your business.</p>
+        </div>
+
+        <div class="icon-card">
+          <div class="icon-wrap">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="18" cy="18" r="13" stroke="#DA7756" stroke-width="2.5"/>
+              <path d="M12 18L16 22L24 14" stroke="#DA7756" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <strong>Done-For-You Delivery</strong>
+          <p>Send us job photos. We handle the rest. No writing, no guessing, no time wasted.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OFFERS -->
+  <section class="offers">
+    <div class="container">
+      <h2>Two ways to get started.</h2>
+      <p class="intro">Pick the plan that fits where your business is right now. Both include done-for-you content. No DIY required.</p>
+
+      <div class="offer-grid">
+
+        <div class="offer-card">
+          <div class="offer-price">$200 <span>/ month</span></div>
+          <div class="offer-name">Content Essentials</div>
+          <p class="offer-desc">The foundation. Consistent content across your most important local channels. You never lift a finger.</p>
+          <ul class="offer-list">
+            <li>8 posts per month</li>
+            <li>Google Business Profile content</li>
+            <li>Facebook content</li>
+            <li>Seasonal AC and heating posts</li>
+            <li>Job spotlight posts</li>
+            <li>Monthly content calendar</li>
+          </ul>
+          <a href="https://calendly.com/tenishamercer/free-content-audit" class="btn-offer" target="_blank" rel="noopener">Start with Essentials</a>
+        </div>
+
+        <div class="offer-card featured">
+          <div class="offer-badge">Most Popular</div>
+          <div class="offer-price">$400 <span>/ month</span></div>
+          <div class="offer-name">Content Growth</div>
+          <p class="offer-desc">More content, more channels, more visibility. For HVAC companies ready to be the name Atlanta homeowners call first.</p>
+          <ul class="offer-list">
+            <li>16 posts per month</li>
+            <li>Google Business Profile content</li>
+            <li>Facebook + Nextdoor content</li>
+            <li>Seasonal campaigns (spring AC, fall heating)</li>
+            <li>Review amplification posts</li>
+            <li>Job spotlights + maintenance tip posts</li>
+            <li>Monthly content calendar</li>
+            <li>Bi-weekly content report</li>
+            <li>1 short-form video script per month</li>
+          </ul>
+          <a href="https://calendly.com/tenishamercer/free-content-audit" class="btn-offer" target="_blank" rel="noopener">Start with Growth</a>
+        </div>
+
+      </div>
+
+      <hr class="divider" />
+      <p style="font-size:0.9rem; color:var(--mid); text-align:center;">Not sure which plan is right? Book a free 15-minute audit. We'll tell you exactly what your business needs before you spend a dollar.</p>
+    </div>
+  </section>
+
+  <!-- WHO IT'S FOR -->
+  <section class="who">
+    <div class="container">
+      <h2>Built for Atlanta HVAC companies who are:</h2>
+      <div class="who-grid">
+        <div class="who-card">
+          <strong>Slammed during peak season</strong>
+          Summer and winter keep your team busy. But content can't stop just because you're booked. We keep it running while you work.
+        </div>
+        <div class="who-card">
+          <strong>Slow between seasons</strong>
+          Spring and fall are your chance to fill the pipeline before the rush. Content during the slow months pays off when demand spikes.
+        </div>
+        <div class="who-card">
+          <strong>Ready to grow</strong>
+          You want more service calls, not just more followers. Our content drives inquiries. Not likes.
+        </div>
+        <div class="who-card">
+          <strong>Tired of being invisible online</strong>
+          You do great work. But if homeowners can't find you when their AC breaks down, that job goes to whoever has the better online presence.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Find out what's missing from your online presence. Takes 15 minutes. Free.</h2>
+      <p>Book a free Content Audit. We'll look at your Google Business Profile, your social presence, and tell you exactly what's costing you service calls.</p>
+      <a href="https://calendly.com/tenishamercer/free-content-audit" class="btn-white" target="_blank" rel="noopener">
+        Book Your Free Content Audit
+      </a>
+      <p class="cta-note">15 minutes. No sales pitch. Just a straight answer.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Content Engine Local · <a href="https://contentenginelocal.com">contentenginelocal.com</a> · Content marketing for local trades businesses</p>
+  </footer>
+
+</body>
+</html>
